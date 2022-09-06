@@ -6,30 +6,15 @@ public class areaperimeter {
 
 	public static void main(String[] args) {
 
-		int b = 0;
-		int h = 0;
-
-		int area = 0;
-
 		Scanner scanner = new Scanner(System.in);
-
-		System.out.println("Enter the Base of triangle : ");
-		b = scanner.nextInt();
-
-		System.out.println("Enter the height of triangle : ");
-		h = scanner.nextInt();
-
-		area = (b * h) / 2;
 		
-		System.out.println("Enter sides : ");
-		int s1 = scanner.nextInt();
-		int s2 = scanner.nextInt();
-		int s3 = scanner.nextInt();
+		System.out.println("Enter the radious value : ");
+		double r = scanner.nextDouble();
+		double area = 3.14 * r * r;
+		double perimeter = 2 * 3.14 * r;
 		
-		int perimeter = s1 + s2 + s3;
-
-		System.out.println("The Area of Triangle is : " + area);
-		System.out.println("The perimeter of Triangle is : " + perimeter);
+		System.out.println("Area of a circle is : " + area);
+		System.out.println("Perimeter of a circle is : " + perimeter);
 		
 	}
 
